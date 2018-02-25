@@ -7,11 +7,13 @@ const initialState = {
   occasion: 'Birthday',
   name: '',
   message: '',
-  show: 'form'
+  show: 'form',
+  color: {
+    red: true,
+    green: false,
+    blue: false
+  },
+  favoriteFlavor: 'van'
 };
 
-reduxSetup({
-  component: <App />,
-  initialState,
-  target: document.getElementById('root')
-});
+reduxSetup({component: <App />, initialState});
