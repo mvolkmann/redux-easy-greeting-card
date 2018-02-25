@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {dispatchSet} from 'redux-easy';
+import {dispatchSet, watch} from 'redux-easy';
 import './card.css';
 
 const greetingMap = {
@@ -36,9 +35,9 @@ class Card extends Component {
   }
 }
 
-function mapState(state) {
-  const {message, name, occasion} = state;
-  return {message, name, occasion};
-}
+export default watch(Card, {
+  message: 'message',
+  name: 'name',
+  occasion: 'occasion'
+});
 
-export default connect(mapState)(Card);

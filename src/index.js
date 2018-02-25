@@ -1,11 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
 import {reduxSetup} from 'redux-easy';
 import App from './App';
-import './reducers';
-
-import './index.css';
+import './reducers'; // forces loading
 
 const initialState = {
   occasion: 'Birthday',
@@ -14,15 +10,8 @@ const initialState = {
   show: 'form'
 };
 
-const store = reduxSetup({initialState, render});
-
-function render() {
-  ReactDOM.render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
-    document.getElementById('root')
-  );
-}
-
-render();
+reduxSetup({
+  component: <App />,
+  initialState,
+  target: document.getElementById('root')
+});

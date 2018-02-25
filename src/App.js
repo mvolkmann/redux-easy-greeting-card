@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
+import {watch} from 'redux-easy';
 import Card from './card';
 import Form from './form';
 import './App.css';
@@ -19,9 +19,4 @@ class App extends Component {
   }
 }
 
-function mapState(state) {
-  const {show} = state;
-  return {show};
-}
-
-export default connect(mapState)(App);
+export default watch(App, {show: 'show'});

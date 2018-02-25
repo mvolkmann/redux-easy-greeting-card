@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {dispatch, dispatchSet, Input, Select, TextArea} from 'redux-easy';
+import React, { Component } from 'react';
+import { dispatch, dispatchSet, Input, Select, TextArea } from 'redux-easy';
 import './form.css';
 
 class Form extends Component {
@@ -28,7 +28,7 @@ class Form extends Component {
           <button onClick={this.shout}>Shout</button>
         </div>
         <div className="row">
-          <label></label>
+          <label />
           <button onClick={this.showCard}>Show Card</button>
         </div>
       </div>
