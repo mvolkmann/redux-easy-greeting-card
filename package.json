@@ -8,7 +8,7 @@
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.1",
     "redux": "^3.7.2",
-    "redux-easy": "^2.0.17"
+    "redux-easy": "^2.0.19"
   },
   "scripts": {
     "start": "react-scripts start",

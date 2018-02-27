@@ -35,9 +35,5 @@ class Card extends Component {
   }
 }
 
-export default watch(Card, {
-  message: 'message',
-  name: 'name',
-  occasion: 'occasion'
-});
+export default watch(Card, {message: '', name: '', occasion: ''});
 
