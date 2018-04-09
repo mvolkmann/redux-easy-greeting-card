@@ -19,4 +19,4 @@ class App extends Component {
   }
 }
 
-export default watch(App, {show: 'show'});
+export default watch(App, {show: ''});

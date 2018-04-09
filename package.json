@@ -8,12 +8,11 @@
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.1",
     "redux": "^3.7.2",
-    "redux-easy": "^2.0.19"
+    "redux-easy": "^2.0.23"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom"
   }
 }

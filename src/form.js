@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import {
   dispatch,
   dispatchSet,
-  //Checkboxes,
+  Checkboxes,
   Input,
-  //RadioButtons,
+  RadioButtons,
   Select,
   TextArea
 } from 'redux-easy';
@@ -16,7 +16,6 @@ class Form extends Component {
   showCard = () => dispatchSet('show', 'card');
 
   render() {
-    /*
     const checkboxList = [
       {text: 'Red', path: 'color.red'},
       {text: 'Green', path: 'color.green'},
@@ -27,7 +26,6 @@ class Form extends Component {
       {text: 'Strawberry', value: 'straw'},
       {text: 'Vanilla', value: 'van'}
     ];
-    */
 
     return (
       <div className="form">
@@ -52,14 +50,12 @@ class Form extends Component {
           <label />
           <button onClick={this.showCard}>Show Card</button>
         </div>
-        {/*
         <Checkboxes className="colors" pathList={checkboxList} />
         <RadioButtons
           className="flavor"
           list={radioButtonList}
           path="favoriteFlavor"
         />
-        */}
       </div>
     );
   }
