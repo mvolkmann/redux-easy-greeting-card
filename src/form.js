@@ -50,7 +50,7 @@ class Form extends Component {
           <label />
           <button onClick={this.showCard}>Show Card</button>
         </div>
-        <Checkboxes className="colors" pathList={checkboxList} />
+        <Checkboxes className="colors" list={checkboxList} />
         <RadioButtons
           className="flavor"
           list={radioButtonList}
